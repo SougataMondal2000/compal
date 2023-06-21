@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="btn.css">
+</head>
+
+<body>
+
+    <section id="header">
+
+        <div class="container">
+            <img class="logo" src="images/Compal-removebg-preview 1.png" alt="logo">
+        </div>
+        <div class="header-text">
+            <h1>Welcome to Compal,<br> the one stop destination to all your Digital Marketing needs</h1>
+            <span class="square"></span>
+            <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the
+                visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used
+                as a placeholder before final copy is available.</p>
+
+            <div><button class="btn" id="btn">Browse Products
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <script>
+                let btn = document.getElementById("btn");
+                let spans = document.getElementById("span");
+
+                btn.onclick = function () {
+                    for (span of spans) {
+                        span.classList.add("anim");
+                    }
+                    setTimeout(function () {
+                        for (span of spans) {
+                            span.classList.remove("anim");
+                        }
+                    }, 500)
+                }
+            </script>
+            <div class="line">
+                <span class="line-1"></span><br>
+                <span class="line-2"></span><br>
+                <span class="line-3"></span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <nav id="sideNav">
+            <ul>
+                <li><img src="images/sem.png" alt=""><a href="#">SEM</a></li>
+                <LI><img src="images/social-media.png" alt=""><a href="#">SMM</a></LI>
+                <LI><img src="images/seo.png" alt=""><a href="#">SEO</a></LI>
+                <LI><img src="images/email-marketing.png" alt=""><a href="#">EM</a></LI>
+                <LI><img src="images/website-codes.png" alt=""><a href="#">Web Design</a></LI>
+            </ul>
+        </nav>
+        <img src="images/menu.png" id="menuBtn" alt="menu">
+        <script>
+            var menuBtn = document.getElementById("menuBtn");
+            var sideNav = document.getElementById("sideNav");
+
+            sideNav.style.right = "-250px";
+            menuBtn.onclick = function () {
+                if (sideNav.style.right = "-250px") {
+                    sideNav.style.right = "0";
+                }
+                else {
+                    sideNav.style.right = "-250px";
+                }
+            }
+        </script>
+    </section>
+
+    <section id="about">
+        <div class="about-left-col">
+            <img src="images/computer.jpg" alt="">
+        </div>
+        <div class="about-right-col">
+            <div class="about-us">
+                <h1>About Us</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br><br>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+                <br>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. </h2>
+
+                <h3>Lorem ipsum dolor sit amet.</h3>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="features">
+        <h1>Why Us?</h1>
+        <div class="feature-row">
+            <div class="feature-col">
+                <img src="images/fast-delivery.png" alt="">
+                <h3>Fast Delivery</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    utlabore et dolore magna aliqua.</p>
+            </div>
+            <div class="feature-col">
+                <img src="images/24-hours-support.png" alt="">
+                <h3>24*7 Customer Support</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    utlabore et dolore magna aliqua.</p>
+            </div>
+            <div class="feature-col">
+                <img src="images/appreciation.png" alt="">
+                <h3>Guaranteed Succes</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    utlabore et dolore magna aliqua.</p>
+            </div>
+        </div>
+
+        <div class="feature-btn">
+            <button class="btn">Start Shopping</button>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="contact">
+        <div class="container contact-row">
+            <div class="contact-left-col">
+                <h1>Get in Touch!</h1>
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email ID">
+                    <input type="text" placeholder="Phone No">
+                    <div class="btn-box">
+                        <button class="btn">Contact Us</button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="contact-right-col">
+                <img src="images/contact us.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container footer-row">
+            <div class="footer-left-col">
+                <div class="footer-links">
+                    <div class="link-title">
+                        <h4>Services</h4>
+                        <small>Digital Marketing</small><br>
+                        <small>Web Designing</small>
+                    </div>
+                    <div class="link-title">
+                        <h4>About Us</h4>
+                        <small>Why Us</small><br>
+                        <small>FAQs</small>
+                    </div>
+                    <div class="link-title">
+                        <h4>Contact Us</h4>
+                        <small>Book a Call</small><br>
+                        <small>Enquiry</small>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right-col">
+                <div class="footer-info">
+                    <div class="copyright-text">
+                        <small>sougataofficial362000@gmail.com</small><br>
+                        <small>copyright 2022 @Compal</small>
+                    </div>
+                    <div class="footer-logo">
+                        <img src="images/Compal-removebg-preview 1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="social-icons">
+        <img src="images/facebook.png" alt="">
+        <img src="images/whatsapp.png" alt="">
+        <img src="images/twitter.png" alt="">
+        <img src="images/linkedin.png" alt="">
+    </div>
+
+    <div class="profile-cart">
+        <img src="images/user.png" alt="">
+        <img src="images/shopping-cart.png" alt="">
+    </div>
+
+</body>
+
+
+
+</body>
+
+</html>
